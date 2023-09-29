@@ -6,7 +6,47 @@
     <title>100x</title>
     <link href="../../dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- Write your code here -->
+  <body class="min-h-screen bg-black text-twitter-neutral-50 font-inter flex flex-col justify-center">
+    <!-- Logo -->
+    <header class="w-full py-3 px-4 flex justify-center items-end absolute top-0">
+      <img src="../../public/images/100.svg" alt="100-icon">
+      <img src="../../public/images/x.svg" alt="100-icon">
+    </header>
+
+    <!-- Sign in -->
+    <main class="px-7 flex flex-col items-start gap-10">
+      <div class="flex flex-col items-start self-stretch gap-3">
+        <p class="text-3.25xl leading-normal font-extrabold">
+          Happening now
+        </p>
+      
+        <p class="text-base leading-normal font-medium">
+          Join today.
+        </p>
+      </div>
+      
+      <a href="./create-account1.html" class="w-full py-2 px-6 rounded-signup-radius bg-twitter-neutral-50 hover:bg-twitter-neutral-200 text-black font-bold leading-normal flex justify-center items-center shadow-signup backdrop-blur-xl-1" rel="noopener noreferrer">
+        <button>
+          Create account
+        </button>
+      </a>
+      
+      <div class="w-full flex justify-center items-center self-stretch gap-1">
+        <div class="w-full h-px bg-neutral-700"></div>
+        <p>or</p>
+        <div class="w-full h-px bg-neutral-700"></div>
+      </div>
+      
+      <div class="flex flex-col items-start self-stretch gap-5">
+        <p class="text-base-1 leading-normal font-normal">
+          Already have an account?
+        </p>
+      
+        <button
+          class="w-full py-2 px-6 border border-stroke rounded-signup-radius text-twitter-blue text-base leading-normal font-bold flex justify-center items-center gap-2 shadow-signup backdrop-blur-xl-1">
+          Sign in
+        </button>
+      </div>
+    </main>
   </body>
 </html>

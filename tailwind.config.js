@@ -6,7 +6,9 @@ module.exports = {
         inter: ["Inter", "sans-serif"],
       },
       fontSize: {
+        "base-1": "15px",
         "2.5xl": "26px",
+        "3.25xl": "32px",
       },
       colors: {
         "twitter-blue": "#1D9BF0",
