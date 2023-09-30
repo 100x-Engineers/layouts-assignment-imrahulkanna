@@ -2,6 +2,11 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      minHeight: {
+        "screen": "100dvh",
+        "screen-small": "100svh",
+        "screen-large": "100lvh"
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },
