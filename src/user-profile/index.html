@@ -6,7 +6,253 @@
     <title>100x</title>
     <link href="../../dist/output.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- Write your code here -->
+  <body class="min-h-screen bg-black font-inter text-twitter-neutral-50 flex flex-col relative">
+    <!-- Back arrow -->
+    <a href="../home/index.html" class="p-1 bg-black rounded-full absolute top-4 left-4">
+      <img src="../../public/images/back.svg" alt="">
+    </a>
+    <!-- Banner -->
+    <section class="self-stretch">
+      <img src="../../public/images/banner.jpg" alt="banner" class="w-full">
+    </section>
+
+    <!-- Profile Details -->
+    <section class="relative py-3 px-4 flex flex-col border-b border-twitter-neutral-500">
+      <img src="../../public/images/rahul.jpg" alt="user-dp" class="w-20 h-20 rounded-full border-4 border-black absolute left-4 top-0 -translate-y-1/2">
+      <div class="w-full flex justify-end">
+        <a href="">
+          <button class="py-2 px-5 justify-center items-center rounded-twitter border border-button-stroke">
+            Edit profile
+          </button>
+        </a>
+      </div>
+      <div class="self-stretch flex flex-col gap-4">
+        <div class="self-stretch flex flex-col gap-1 leading-normal">
+          <h1 class="text-xl font-bold leading-normal">Rahul Kanna</h1>
+          <p class="text-twitter-neutral-500 text-base-1 leading-normal">@imrahulkanna</p>
+        </div>
+        <div class="leading-normal">
+          Techie | Otaku | Learner, Dreamer, Doer. <br>
+          I tweet about web dev and anime. <br>
+          <span class="text-twitter-blue">#codelove</span> dattebayo 🎶
+        </div>
+        <div class="self-stretch flex flex-wrap gap-x-5">
+          <div class="flex items-center gap-1">
+            <img src="../../public/images/link.svg" alt="link-icon">
+            <a href="http://www.github.com/imrahulkanna" target="_blank" rel="noopener noreferrer" class="text-twitter-blue">
+              github.com/imrahulkanna
+            </a>
+          </div>
+          <div class="flex items-center gap-1 text-twitter-neutral-500">
+            <img src="../../public/images/calendar.svg" alt="calendar-icon">
+            <p>Joined June 2020</p>
+          </div>
+        </div>
+        <div class="self-stretch flex items-center gap-5 font-medium leading-normal">
+          <p>
+            196 <span class="text-twitter-neutral-500 font-normal">Following</span>
+          </p>
+          <p>
+            57 <span  class="text-twitter-neutral-500 font-normal">Followers</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tweets Area -->
+    <main class="self-stretch flex flex-col">
+      <article class="py-2 px-4 border-b border-twitter-neutral-700 self-stretch flex items-start gap-4">
+        <!-- user avatar -->
+        <img src="../../public/images/rahul.jpg" alt="avatar-1" class="w-12 h-12 rounded-full">
+        <!-- tweet body -->
+        <div class="w-full flex flex-col gap-1 self-stretch">
+          <header class="flex items-center gap-2 self-stretch">
+            <p class="text-twitter-neutral-50 text-base font-medium leading-normal">
+              Name
+            </p>
+            <p class="text-twitter-neutral-500 text-base font-normal leading-normal">
+              @handle • 32m
+            </p>
+          </header>
+          <p class="self-stretch text-base-1 leading-normal">
+            Don't wish for it, work for it.
+          </p>
+          <div class="py-3 flex justify-between items-center self-stretch text-twitter-neutral-500 text-sm leading-normal">
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/comment.svg" alt="comment-icon">
+              <p>11</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/retweet.svg" alt="retweet-icon">
+              <p>270</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/heart.svg" alt="heart-icon">
+              <p>1,869</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/reach.svg" alt="">
+              <p>99.6k</p>
+            </button>
+    
+            <button class="flex items-center">
+              <img src="../../public/images/share.svg" alt="share-icon">
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="py-2 px-4 border-b border-twitter-neutral-700 self-stretch flex items-start gap-4">
+        <!-- user avatar -->
+        <img src="../../public/images/rahul.jpg" alt="avatar-1" class="w-12 h-12 rounded-full">
+        <!-- tweet body -->
+        <div class="w-full flex flex-col gap-1 self-stretch">
+          <header class="flex items-center gap-2 self-stretch">
+            <p class="text-twitter-neutral-50 text-base font-medium leading-normal">
+              Name
+            </p>
+            <p class="text-twitter-neutral-500 text-base font-normal leading-normal">
+              @handle • 10h
+            </p>
+          </header>
+          <p class="self-stretch text-base-1 leading-normal">
+            i've seen people absolutely despise auto layout in figma but i think it's a lifesaver-<br>
+            1. tidies everything nice and compact<br>
+            2. makes responsive design effortless<br>
+            3. no manual adjustments post any tweaks<br>
+            4. saves a tonnn of time<br><br>
+            sorry, but will stay an auto layout maxi all life.
+          </p>
+          <div class="py-3 flex justify-between items-center self-stretch text-twitter-neutral-500 text-sm leading-normal">
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/comment.svg" alt="comment-icon">
+              <p>11</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/retweet.svg" alt="retweet-icon">
+              <p>270</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/heart.svg" alt="heart-icon">
+              <p>1,869</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/reach.svg" alt="">
+              <p>99.6k</p>
+            </button>
+    
+            <button class="flex items-center">
+              <img src="../../public/images/share.svg" alt="share-icon">
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="py-2 px-4 border-b border-twitter-neutral-700 self-stretch flex items-start gap-4">
+        <!-- user avatar -->
+        <img src="../../public/images/rahul.jpg" alt="avatar-1" class="w-12 h-12 rounded-full">
+        <!-- tweet body -->
+        <div class="w-full flex flex-col gap-1 self-stretch">
+          <header class="flex items-center gap-2 self-stretch">
+            <p class="text-twitter-neutral-50 text-base font-medium leading-normal">
+              Name
+            </p>
+            <p class="text-twitter-neutral-500 text-base font-normal leading-normal">
+              @handle • 21h
+            </p>
+          </header>
+          <p class="self-stretch text-base-1 leading-normal">
+            Writing gets easier after the first sentence.
+            <br> <br>
+            Lifting gets easier after the first set.
+            <br> <br>
+            People think and think and think until they finally decide to act. Their attention shifts from internal to
+            external, and
+            the difficulty they created in their mind vanishes.
+          </p>
+          <div class="py-3 flex justify-between items-center self-stretch text-twitter-neutral-500 text-sm leading-normal">
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/comment.svg" alt="comment-icon">
+              <p>11</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/retweet.svg" alt="retweet-icon">
+              <p>270</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/heart.svg" alt="heart-icon">
+              <p>1,869</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/reach.svg" alt="">
+              <p>99.6k</p>
+            </button>
+    
+            <button class="flex items-center">
+              <img src="../../public/images/share.svg" alt="share-icon">
+            </button>
+          </div>
+        </div>
+      </article>
+    
+      <article class="py-2 px-4 border-b border-twitter-neutral-700 self-stretch flex items-start gap-4">
+        <!-- user avatar -->
+        <img src="../../public/images/rahul.jpg" alt="avatar-1" class="w-12 h-12 rounded-full">
+        <!-- tweet body -->
+        <div class="w-full flex flex-col gap-1 self-stretch">
+          <header class="flex items-center gap-2 self-stretch">
+            <p class="text-twitter-neutral-50 text-base font-medium leading-normal">
+              Name
+            </p>
+            <p class="text-twitter-neutral-500 text-base font-normal leading-normal">
+              @handle • Sep 19
+            </p>
+          </header>
+          <p class="self-stretch text-base-1 leading-normal">
+            Don't wish for it, work for it.
+          </p>
+          <div class="py-3 flex justify-between items-center self-stretch text-twitter-neutral-500 text-sm leading-normal">
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/comment.svg" alt="comment-icon">
+              <p>11</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/retweet.svg" alt="retweet-icon">
+              <p>270</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/heart.svg" alt="heart-icon">
+              <p>1,869</p>
+            </button>
+    
+            <button class="flex items-center gap-[5px]">
+              <img src="../../public/images/reach.svg" alt="">
+              <p>99.6k</p>
+            </button>
+    
+            <button class="flex items-center">
+              <img src="../../public/images/share.svg" alt="share-icon">
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <a href="../compose-tweet/index.html">
+      <button class="p-4 bg-twitter-blue rounded-full fixed bottom-[2.5rem] right-[1rem]">
+        <img src="../../public/images/createTweet.svg" alt="create-tweet">
+      </button>
+    </a>
   </body>
 </html>
