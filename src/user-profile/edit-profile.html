@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100x</title>
+    <link href="../../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-black text-twitter-neutral-50 font-inter flex flex-col">
+    <header class="py-3 px-4 flex justify-between items-center">
+      <div class="flex gap-5">
+        <!-- Back arrow -->
+        <a href="./index.html">
+          <img src="../../public/images/back.svg" alt="back-arrow-icon">
+        </a>
+          <p>Edit Profile</p>
+      </div>
+      <a href="./index.html">
+        <button
+          class="py-2 px-5 flex justify-center items-center gap-2.5 rounded-twitter bg-twitter-neutral-50 hover:bg-twitter-neutral-200 disabled:opacity-50 disabled:hover:bg-twitter-blue md:py-[15px] md:px-[93px] md:rounded-full">
+          <p class="text-black text-base font-bold leading-normal">
+            Save
+          </p>
+        </button>
+      </a>
+    </header>
+
+    <!-- Cover & Profile image edit -->
+    <section class="mb-12 relative self-stretch border">
+      <!-- Cover image edit section -->
+      <div class="relative self-stretch">
+        <div class="flex justify-center items-center gap-4 bg-transparent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60">
+          <img src="../../public/images/photo.svg" alt="photo-icon" class="p-2 bg-twitter-neutral-900 rounded-full cursor-pointer">
+          <img src="../../public/images/cancel.svg" alt="cancel-icon" class="p-2 bg-twitter-neutral-900 rounded-full cursor-pointer">
+        </div>
+        <img src="../../public/images/banner.jpg" alt="banner" class="w-full">
+      </div>
+
+      <!-- Profile image edit section -->
+      <div class="absolute bottom-0 translate-y-1/2 left-4">
+        <img src="../../public/images/rahul.jpg" alt="user-dp" class="w-24 h-24 rounded-full border-4 border-black">
+        <img src="../../public/images/photo.svg" alt="photo-icon" class="p-2 bg-twitter-neutral-900 rounded-full bg-transparent absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-60 cursor-pointer">
+      </div>
+    </section>
+
+    <!-- User details edit section -->
+    <main class="py-3 px-4 flex flex-col gap-5">
+      <section class="self-stretch">
+        <fieldset
+          class="group w-full pt-2  pb-4 px-3 border border-twitter-neutral-500 rounded-[4px] flex items-center focus-within:outline-none focus-within:border-twitter-blue focus-within:ring-twitter-blue">
+          <legend class="px-1 text-twitter-neutral-500 text-xs font-medium leading-normal group-focus-within:text-twitter-blue">
+            Name
+          </legend>
+          <input type="text" placeholder="Name" value="Rahul Kanna"
+            class="w-full bg-transparent  placeholder:text-twitter-neutral-500 text-twitter-neutral-50 text-base leading-normal focus:outline-none">
+        </fieldset>
+      </section>
+      <section>
+        <fieldset
+          class="group w-full pt-2  pb-4 px-3 border border-twitter-neutral-500 rounded-[4px] flex items-center focus-within:outline-none focus-within:border-twitter-blue focus-within:ring-twitter-blue">
+          <legend class="px-1 text-twitter-neutral-500 text-xs font-medium leading-normal group-focus-within:text-twitter-blue">
+            Bio
+          </legend>
+          <!-- <input type="text" placeholder="Bio"
+            class="w-full bg-transparent  placeholder:text-twitter-neutral-500 text-twitter-neutral-50 text-base leading-normal focus:outline-none"> -->
+            <textarea name="tweet-content" placeholder="Bio"
+              class="w-full h-16 bg-transparent text-base leading-normal placeholder:text-twitter-neutral-600 focus:outline-none resize-none overflow-y-auto" wrap="soft" spellcheck="true" dir="auto" autocapitalize="sentences">Techie | Otaku | Learner, Dreamer, Doer.
+I tweet about web dev and anime.
+#codelove dattebayo 🎶</textarea>
+        </fieldset>
+      </section>
+      <section>
+        <fieldset
+          class="group w-full pt-2  pb-4 px-3 border border-twitter-neutral-500 rounded-[4px] flex items-center focus-within:outline-none focus-within:border-twitter-blue focus-within:ring-twitter-blue">
+          <legend class="px-1 text-twitter-neutral-500 text-xs font-medium leading-normal group-focus-within:text-twitter-blue">
+            Location
+          </legend>
+          <input type="text" placeholder="Location" value="Hyderabad, Telangana"
+            class="w-full bg-transparent  placeholder:text-twitter-neutral-500 text-twitter-neutral-50 text-base leading-normal focus:outline-none">
+        </fieldset>
+      </section>
+      <section>
+        <fieldset
+          class="group w-full pt-2  pb-4 px-3 border border-twitter-neutral-500 rounded-[4px] flex items-center focus-within:outline-none focus-within:border-twitter-blue focus-within:ring-twitter-blue">
+          <legend class="px-1 text-twitter-neutral-500 text-xs font-medium leading-normal group-focus-within:text-twitter-blue">
+            Website
+          </legend>
+          <input type="text" placeholder="Website" value="https://www.github.com/imrahulkanna"
+            class="w-full bg-transparent  placeholder:text-twitter-neutral-500 text-twitter-neutral-50 text-base leading-normal focus:outline-none">
+        </fieldset>
+      </section>
+    </main>
+  </body>
+</html>
