@@ -3,9 +3,9 @@ module.exports = {
   theme: {
     extend: {
       minHeight: {
-        "screen": "100dvh",
+        screen: "100dvh",
         "screen-small": "100svh",
-        "screen-large": "100lvh"
+        "screen-large": "100lvh",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
@@ -20,7 +20,7 @@ module.exports = {
         "twitter-blue-hover": "#1871CA",
         "twitter-blue-disabled": "#1E5D87",
         "blue-wash": "rgba(117, 190, 239, 0.2)",
-        "stroke": "rgba(29, 155, 240, 0.24)",
+        stroke: "rgba(29, 155, 240, 0.24)",
         "button-stroke": "#546A7A",
         "searchbar-fill": "#212327",
         "card-fill": "#16181C",
@@ -64,6 +64,26 @@ module.exports = {
       },
       backdropBlur: {
         "xl-1": "23.668209075927734px",
+      },
+      keyframes: {
+        showAndHide: {
+          "0%": {
+            opacity: "0" /* Start with opacity 0 */,
+          },
+          "20%": {
+            opacity: "1" /* Quickly show the element */,
+          },
+          "80%": {
+            opacity: "1" /* Keep the element visible */,
+          },
+          "100%": {
+            opacity: "0" /* Fade out the element */,
+            display: "none" /* Hide the element */,
+          },
+        },
+      },
+      animation: {
+        delay: "showAndHide 5s forwards",
       },
     },
   },

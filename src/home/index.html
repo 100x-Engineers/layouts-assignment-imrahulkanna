@@ -6,13 +6,17 @@
     <title>100x</title>
     <link href="../../dist/output.css" rel="stylesheet" />
   </head>
-  <body class="min-h-screen text-twitter-neutral-50 font-inter bg-black flex flex-col items-start">
+  <body class="min-h-screen text-twitter-neutral-50 font-inter bg-black flex flex-col items-start relative">
     <!-- Header - 100xlogo and user dp -->
     <header class="py-3 px-4 self-stretch relative border-b border-twitter-neutral-700">
       <a href="../user-profile/index.html">
         <img src="../../public/images/rahul.jpg" alt="user-dp" class="w-9 h-9 rounded-full object-cover">
       </a>
-      <img src="../../public/images/100x.svg" alt="100x" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <img src="../../public/images/100x.svg" alt="100x" class="peer absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+
+      <div class="hidden py-3 px-8 bg-searchbar-fill rounded-[100px] text-base-1 leading-normal fixed bottom-[4.5rem] left-1/2 -translate-x-1/2 peer-active:block">
+        Copied to Clipboard
+      </div>
     </header>
 
     <!-- Navbar -->
